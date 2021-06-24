@@ -1,2 +1,26 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<%# raise @products.count.inspect %>
+<div class="row">
+  <div class="col-md-12">
+    <h2 class="text-center">Admin Dashboard</h2>
+  </div>
+  <!-- <div class="col-md-12">No of Products : <%= @products.count %></div>
+  <div class="col-md-12">No of categories : <%= @categories.count %></div> -->
+  <section class="panels col-md-12">
+    <div class="jumbotron col-md-4">
+      <h2>No of Products : <%= @products.count %></h2>
+      <p>
+        <a class="btn btn-primary btn-lg" href="#" role="button"
+          >See All Products</a
+        >
+      </p>
+    </div>
+    <div class="jumbotron col-md-4">
+      <h2>No of categories : <%= @categories.count %></h2>
+      <p>
+        <a class="btn btn-primary btn-lg" href="#" role="button"
+          >See All Products</a
+        >
+      </p>
+    </div>
+  </section>
+</div>
