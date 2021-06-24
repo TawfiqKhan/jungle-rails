@@ -1,0 +1,36 @@
+.dashboard-header {
+  border-bottom: 1px solid rosybrown;
+}
+
+.panels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0;
+
+  div {
+    background-color: darkgoldenrod;
+    margin: 1%;
+    color: cornsilk;
+
+    hr {
+      margin-bottom: 0;
+    }
+    a {
+      color: cornsilk;
+      font-size: 1.8rem;
+      &:hover {
+        color: #a8f5c9;
+        // font-weight: bold;
+      }
+    }
+    i {
+      font-size: 1em;
+    }
+    .panel-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 1.2%;
+    }
+  }
+}

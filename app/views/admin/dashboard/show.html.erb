@@ -1,26 +1,35 @@
 <%# raise @products.count.inspect %>
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-12 dashboard-header">
     <h2 class="text-center">Admin Dashboard</h2>
   </div>
   <!-- <div class="col-md-12">No of Products : <%= @products.count %></div>
   <div class="col-md-12">No of categories : <%= @categories.count %></div> -->
   <section class="panels col-md-12">
-    <div class="jumbotron col-md-4">
-      <h2>No of Products : <%= @products.count %></h2>
-      <p>
-        <a class="btn btn-primary btn-lg" href="#" role="button"
-          >See All Products</a
-        >
-      </p>
+    <div class="col-sm-4">
+      <h2>Products : <%= @products.count %></h2>
+      <hr />
+      <div class="panel-link">
+        <a class="" href="/">View Details</a>
+        <i class="fa fa-chevron-right"></i>
+      </div>
     </div>
-    <div class="jumbotron col-md-4">
-      <h2>No of categories : <%= @categories.count %></h2>
-      <p>
-        <a class="btn btn-primary btn-lg" href="#" role="button"
-          >See All Products</a
-        >
-      </p>
+    <div class="col-sm-4">
+      <h2>categories : <%= @categories.count %></h2>
+      <hr />
+      <div class="panel-link">
+        <a class="" href="categories/1">View Details</a>
+        <i class="fa fa-chevron-right"></i>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <h2>Orders : <%= @categories.count %></h2>
+      <hr />
+      <div class="panel-link">
+        <a class="" href="#">View Details</a>
+        <i class="fa fa-chevron-right"></i>
+      </div>
     </div>
   </section>
 </div>
