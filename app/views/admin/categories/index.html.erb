@@ -1,0 +1,11 @@
+<main class="row">
+  <header class="page-header">
+    <h1>Admin &raquo; All Categories</h1>
+  </header>
+  <div class="well">
+    <!-- prettier-ignore -->
+    <%= link_to '+ New Category', [:new, :admin, :product], class: 'btn btn-info' %>
+    <!-- prettier-ignore -->
+  </div>
+  <section class="row panels"><%= render @categories %></section>
+</main>

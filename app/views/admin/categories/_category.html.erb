@@ -1,0 +1,11 @@
+<%# raise product.inspect %>
+
+<div class="col-xs-4">
+  <h2><%= category.name %></h2>
+  <h4>Products : <%= category.products.count %></h4>
+  <hr />
+  <div class="panel-link">
+    <a class="" href="/categories/<%= category.id %> ">View Details</a>
+    <i class="fa fa-chevron-right"></i>
+  </div>
+</div>
