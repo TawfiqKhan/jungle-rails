@@ -16,3 +16,9 @@ body {
 form.button_to {
   display: inline;
 }
+
+// Temporary solution for aligning user email once they sign in
+.nav {
+  display: flex;
+  align-items: center;
+}
