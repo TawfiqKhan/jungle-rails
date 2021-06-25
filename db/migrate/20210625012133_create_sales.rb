@@ -2,10 +2,8 @@ class CreateSales < ActiveRecord::Migration
   def change
     create_table :sales do |t|
       t.string :title
-      t.string :starts_on
-      t.string :date
-      t.string :ends_on
-      t.string :date
+      t.date :starts_on
+      t.date :ends_on
       t.integer :percent_off
 
       t.timestamps null: false

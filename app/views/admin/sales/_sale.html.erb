@@ -2,6 +2,17 @@
   <td><%= sale.title %></td>
   <td><%= sale.starts_on %></td>
   <td><%= sale.ends_on %></td>
-  <td>Status</td>
+  <td>
+    <!-- <span class="label btn-success"> Active </span>
+    <span class="label btn-warning"> Upcoming </span>
+    <span class="label btn-danger"> Finished </span> -->
+    <% if sale.finished? %>
+    <span class="label btn-danger"> Finished </span>
+    <% elsif sale.upcoming? %>
+    <span class="label btn-warning"> Upcoming </span>
+    <% else %>
+    <span class="label btn-success"> Active </span>
+    <% end %>
+  </td>
   <td><%= sale.percent_off %></td>
 </tr>
